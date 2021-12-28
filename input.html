@@ -4,89 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input.html</title>
+    <title>Input Js</title>
 </head>
 <body>
     
 </body>
 </html>
 <script>
-  
-    /*
-    var myname = prompt ("nhap ten cua ban");
-    if (myname == "") {
-        alert ("khong co ten");
-    }
-
-
-
-    var a = prompt ("nhap so bat ky")
-        a = parseFloat (a);
-        if (a%2 == "0") {
-            alert ("chan");
+    let userName = prompt ("Who is there?");
+        if (userName == "Admin"){
+            var pass = prompt ("Enter Your passwords?");
+        }else if (userName == "null") {
+            alert("canceled");
         } else {
-            alert ("le");
+            alert("I don't know you");
         }
-     
-
-    var a = prompt ("nhap so bat ki");
-        a = parseFloat(a);
-        if (a < "5") {
-            alert ("a<5");
-        }else if(a == "5") {
-            alert ("a=5")
-        }else {
-            alert ("a>5")
-        }
-*/
-
-        var a = prompt ("Em Nga");
-            a =parseFloat(a);
-            if (a > "0"){
-                if(a%2 == "0") {
-                    alert ("a duong chan");
-                }else {
-                    alert ("a duong le");
-                }
-            } else if (a == "0") {
-                alert ("a la 0");
+            if (pass == "TheMaster") {
+                alert ("Welcome");
+            } else if (pass == "null") {
+                alert ("Canceled");
             }else {
-                if(a%2 == "0") {
-                    alert ("a am chan");
-                }else {
-                    alert ("a am le");
-                }
+                alert ("Wrong passwords");
             }
-       
         
-/*
-
-       var a = prompt ("nhap tu mot so");
-           a = parseFloat(a);
-           switch (a){
-               case 1:
-                   alert("Hom nay la chu nhat");
-                   break;
-                case 2:
-                   alert("Hom nay la thu 2");
-                   break;
-                case 3:
-                   alert("Hom nay la thu 3");
-                   break;
-                case 4:
-                   alert("Hom nay la thu 4");
-                   break;
-                case 5:
-                   alert("Hom nay la thu 5");
-                   break;
-                case 6:
-                   alert("Hom nay la thu 6");
-                   break;
-                case 7:
-                   alert("Hom nay la thu 6");
-                   break;
-                default:
-                    alert ("Day khong phai la thu");
-           }
-           */
 </script>
