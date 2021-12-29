@@ -21,4 +21,29 @@
         var c = a+b;
         document.querySelector('#result').value = c
     }
+
+
+    <h1>Calculator</h1>
+    1st Number: <input type="number" id="number1"> <br>
+    2nd Number: <input type="number" id="number2"> <br>
+    <button type="button" onclick="multiply();">Multiply</button>
+    <button type="button" onclick="divide();">Divide</button> <br> <br>
+    <span id="result" style="color:red; font-size: 30px;"></span>
+
+    function multiply() {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            var c = a * b;
+            document.getElementById('result').innerHTML = "Result: "  + c
+    }
+    function divide() {
+        var a = document.getElementById('number1').value;
+        var b = document.getElementById('number2').value;
+            a = parseFloat(a);
+            b = parseFloat(b);
+            var c = a / b;
+            document.getElementById('result').innerHTML = "Result: "  + c
+    }
 </script>
