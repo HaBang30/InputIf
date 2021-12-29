@@ -7,42 +7,40 @@
     <title>Input Js</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Giá hoa quả</h1>
-    <form action="" method="get" style="text-align: center;">
-        <input type="text" id="price">
-        <button type="button" onclick="cost()">See Price</button>
+   <h1 style="text-align: center;"> Calculation amount of day in month</h1>
+   <form action="" method="get" style="text-align: center;">
+        <input type="text" id="month">
+        <button onclick="calculator()" type="button">CALCULATOR</button> <br>
+        <span id="appear" style="color:red; font-weight: bold;"></span>
     </form>
 </body>
 </html>
 <script>
-    function cost() {
-        var price = document.getElementById('price').value;
-                switch (price) {
-                    case "Ổi":
-                        alert ("Giá: 20000 VNĐ/kg");
+    function calculator() {
+        var month = document.getElementById("month").value;
+                switch (month) {
+                    case "1":
+                    case "3":
+                    case "5":
+                    case "7":
+                    case "8":
+                    case "10":
+                    case "12":
+                        document.getElementById("appear").innerHTML = "Total is 31 days";
                         break;
-                    case "Dưa Hấu":
-                        alert ("Giá: 10000 VNĐ/kg");
+                    case "2":
+                        document.getElementById("appear").innerHTML = "There are 28 || 29 day";
                         break;
-                    case "Táo":
-                        alert ("Giá: 30000 VNĐ/kg");
-                        break;
-                    case "Xoài":
-                        alert ("Giá: 15000 VNĐ/kg");
-                        break;
-                    case "Cam":
-                        alert ("Giá: 40000 VNĐ/kg");
-                        break;
-                    case "Chôm Chôm":
-                        alert ("Giá: 25000 VNĐ/kg");
-                        break;
-                    case "Măng Cụt":
-                        alert ("Giá: 50000 VNĐ/kg");
+                    case "4":
+                    case "6":
+                    case "9":
+                    case "11":
+                        document.getElementById("appear").innerHTML = "Here is 30 days";
                         break;
                     default:
-                        alert ("Please enter the fruit")
+                        alert ("No month");    
                 }
         
     }
-   
+  
 </script>
